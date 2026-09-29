@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curriculum Vitae El Vira Khirunnisa, mahasiswa S1 Sistem Informasi Universitas Dian Nuswantoro.">
+  <meta name="author" content="El Vira Khirunnisa">
+  <title>CV | El Vira Khirunnisa</title>
+  <style>
+    :root { --blush:#fff1f5; --pink:#f7c6d6; --rose:#d9527f; --berry:#5e1b38; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,"Segoe UI",sans-serif; line-height:1.65; color:var(--berry); background:var(--blush); }
+    h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.2; }
+    a { color:var(--rose); }
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible { outline:3px solid var(--berry); outline-offset:2px; }
+
+    body > header { background:var(--rose); color:var(--white); padding:2.5rem 1.5rem 1.5rem; text-align:center; }
+    body > header h1 { margin:0; font-size:clamp(2rem,6vw,3.2rem); }
+    body > header p { margin:.4rem 0 0; }
+    nav ul { list-style:none; margin:1.5rem 0 0; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem; }
+    nav a { display:block; padding:.4rem 1rem; border-radius:99px; background:var(--white); color:var(--berry); text-decoration:none; font-weight:600; }
+    nav a:hover { background:var(--pink); }
+
+    .layout { max-width:1000px; margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:260px 1fr; gap:2rem; align-items:start; }
+    aside { background:var(--white); border:2px solid var(--pink); border-radius:20px; padding:1.5rem; text-align:center; position:sticky; top:1rem; }
+    aside img { width:180px; height:180px; object-fit:cover; border-radius:50%; border:5px solid var(--pink); background:var(--pink); }
+    aside figcaption { margin-top:.6rem; font-weight:600; }
+    aside address { font-style:normal; text-align:left; font-size:.92rem; overflow-wrap:anywhere; }
+    aside dl { margin:1rem 0 0; text-align:left; font-size:.92rem; }
+    aside dt { font-weight:700; margin-top:.5rem; }
+    aside dd { margin:0; overflow-wrap:anywhere; }
+
+    main section { background:var(--white); border-left:8px solid var(--rose); border-radius:0 20px 20px 0; padding:1.5rem 1.75rem; margin-bottom:1.5rem; }
+    main h2 { margin-top:0; }
+    blockquote { margin:1rem 0 0; padding:.5rem 1rem; border-left:4px solid var(--pink); font-style:italic; }
+
+    table { width:100%; border-collapse:collapse; }
+    caption { text-align:left; font-weight:700; padding-bottom:.5rem; }
+    th,td { padding:.6rem .7rem; text-align:left; border-bottom:1px solid var(--pink); vertical-align:top; }
+    thead th { background:var(--pink); }
+    .scroll { overflow-x:auto; }
+
+    .skills { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem; }
+    .skills label { display:block; font-weight:600; }
+    meter { width:100%; height:1rem; }
+    ul.chips { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+    ul.chips li { background:var(--blush); border:1px solid var(--pink); border-radius:99px; padding:.2rem .9rem; }
+
+    form { display:grid; gap:.9rem; }
+    form label { font-weight:600; }
+    input,textarea { width:100%; padding:.6rem .8rem; border:2px solid var(--pink); border-radius:10px; font:inherit; color:inherit; }
+    button { justify-self:start; padding:.65rem 1.6rem; border:0; border-radius:99px; background:var(--rose); color:var(--white); font:inherit; font-weight:700; cursor:pointer; }
+    button:hover { background:var(--berry); }
+
+    body > footer { text-align:center; padding:1.5rem; background:var(--berry); color:var(--pink); }
+    body > footer a { color:var(--white); }
+
+    @media (max-width:760px) {
+      .layout { grid-template-columns:1fr; }
+      aside { position:static; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="beranda">
+    <h1>El Vira Khirunnisa</h1>
+    <p>Mahasiswa S1 Sistem Informasi &middot; Universitas Dian Nuswantoro</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside aria-label="Profil singkat">
+      <figure>
+        <img src="../img/profile.jpeg" alt="Foto El Vira Khirunnisa" width="180" height="180">
+        <figcaption>El Vira Khirunnisa</figcaption>
+      </figure>
+      <dl>
+        <dt>Tempat, tanggal lahir</dt>
+        <dd>Kudus, <time datetime="2005-05-11">11 Mei 2005</time></dd>
+        <dt>Domisili</dt>
+        <dd>Semarang</dd>
+      </dl>
+      <address>
+        <p><strong>Email</strong><br><a href="mailto:elvirakh1155@gmail.com">elvirakh1155@gmail.com</a></p>
+        <p><strong>WhatsApp</strong><br><a href="tel:+6288985181472">0889-8518-1472</a></p>
+        <p><strong>GitHub</strong><br><a href="https://github.com/elvirakh1155-eng" target="_blank" rel="noopener">elvirakh1155-eng</a></p>
+        <p><strong>Instagram</strong><br><a href="https://www.instagram.com/elviraa.kh" target="_blank" rel="noopener">@elviraa.kh</a></p>
+      </address>
+    </aside>
+
+    <main>
+      <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Halo, saya <strong>El Vira Khirunnisa</strong>, mahasiswa <abbr title="Strata 1">S1</abbr> Sistem Informasi di Universitas Dian Nuswantoro Semarang. Latar belakang saya di bidang Otomatisasi dan Tata Kelola Perkantoran membuat saya terbiasa dengan administrasi yang rapi, dan kini saya memadukannya dengan ilmu sistem informasi.</p>
+        <p>Saya senang belajar hal baru, bekerja dalam tim, dan menyelesaikan tugas dengan teliti. Saya sedang mencari kesempatan untuk mengembangkan kemampuan lewat magang, proyek, dan organisasi.</p>
+        <blockquote>Belajar sedikit demi sedikit, tetapi konsisten.</blockquote>
+      </section>
+
+      <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <div class="scroll">
+          <table>
+            <caption>Riwayat pendidikan</caption>
+            <thead>
+              <tr><th scope="col">Institusi</th><th scope="col">Program / Jurusan</th><th scope="col">Tahun</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Universitas Dian Nuswantoro</td>
+                <td>S1 Sistem Informasi<br><small>IPK: 3,88</small></td>
+                <td>2025 &ndash; sekarang</td>
+              </tr>
+              <tr>
+                <td>SMKN 1 Kudus</td>
+                <td>Otomatisasi dan Tata Kelola Perkantoran</td>
+                <td>Lulus 2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="pengalaman">
+        <h2>Pengalaman</h2>
+        <article>
+          <h3>Magang di IAIN Kudus</h3>
+          <p><small>Durasi: 6 bulan</small></p>
+          <ul>
+            <li>Membantu pekerjaan administrasi dan pengelolaan dokumen kantor.</li>
+            <li>Mengolah data dan menyusun laporan menggunakan Microsoft Office.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Himpunan Mahasiswa Sistem Informasi</h3>
+          <p><small>Organisasi kemahasiswaan</small></p>
+          <ul>
+            <li>Ikut serta dalam kegiatan dan program kerja himpunan.</li>
+            <li>Bekerja sama dengan anggota lain dalam kepanitiaan.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <div class="skills">
+          <article>
+            <h3>Hard skill</h3>
+            <p><label for="word">Microsoft Word</label><meter id="word" min="0" max="100" value="90">90%</meter></p>
+            <p><label for="excel">Microsoft Excel</label><meter id="excel" min="0" max="100" value="80">80%</meter></p>
+            <p><label for="ppt">Microsoft PowerPoint</label><meter id="ppt" min="0" max="100" value="85">85%</meter></p>
+          </article>
+          <article>
+            <h3>Soft skill</h3>
+            <ul class="chips">
+              <li>Komunikasi</li>
+              <li>Kerja sama tim</li>
+              <li>Manajemen waktu</li>
+              <li>Teliti</li>
+              <li>Adaptif</li>
+              <li>Tanggung jawab</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <form action="mailto:elvirakh1155@gmail.com" method="post" enctype="text/plain">
+          <div>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </div>
+          <div>
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+          </div>
+          <button type="submit">Kirim pesan</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 El Vira Khirunnisa. <a href="#beranda">Kembali ke atas</a></p>
+  </footer>
+
+</body>
+</html>
